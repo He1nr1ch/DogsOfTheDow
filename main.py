@@ -4,6 +4,7 @@
 
 import streamlit as st
 import pandas as pd
+import finviz
 from finviz.screener import Screener
 
 st.title('Dogs of the Dow Calculator')
