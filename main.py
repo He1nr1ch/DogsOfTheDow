@@ -15,8 +15,12 @@ st.write("The stocks of the Dow, their price and dividend yield")
 filters = ['idx_dji'] # I only want Dow stocks
 dow_jones = Screener(filters=filters, table='Financial', order='-dividendyield')
 
-#for stock in dow_jones:
-#    print(stock['Ticker'], stock['Price'], stock['Dividend'])
+basic_dow = []
+
+for stock in dow_jones:
+    basic_dow.append(stock['Ticker'], stock['Price'], stock['Dividend'])
+
+
     #stock_data = pd.DataFrame(data=[stock['Ticker'], stock['Price'], stock['Dividend']], columns=['Ticker', 'Price', 'Dividend'])
 
-st.table(dow_jones)
+st.table(basic_dow)
