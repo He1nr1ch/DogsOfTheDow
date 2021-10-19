@@ -4,4 +4,4 @@
 
 import streamlit as st
 
-st..title('Dogs of the Dow Calculator')
+st.title('Dogs of the Dow Calculator')
